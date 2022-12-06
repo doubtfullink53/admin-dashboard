@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.layout {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content"
+    "sidebar main-content";
+
+  grid-template-rows: 180px 1fr 30px;
+  grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+.header {
+  grid-area: header;
+}
+.main-content {
+  grid-area: main-content;
+}
+
+/* sidebar styles */
+.sidebar{
+  display: grid;
+  background-color: lightblue !important;
+  font-size: 1.7rem;
+}
+.sidebar-header{
+  font-weight: bolder;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  align-content: space-between;
+  margin:20px;
+}
+
+.sidebar a{
+  color: white;
+  text-decoration: none;
+}
+.sidebar i{
+  
+  padding: 20px;
+}
+
+.sidebar ul{
+  display: inline-grid;
+  list-style-type: none;
+  text-align: left;
+  align-content: center;
+  padding:20px;
+}
+
+/* header  first row*/
+.header > div{
+  color: black;
+  font-size: 1rem;
+}
+.first-row{
+  display: grid;
+  grid-template-areas: 
+  "search-icon search-input";
+  padding:20px;
+  grid-template-columns: 1fr 3fr 1fr 20px 1fr;
+  grid-template-rows: 1fr ;
+  align-items: center;
+ 
+}
+
+.first-row > i{
+  display: grid;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+.first-row > .search-icon{
+  display: grid;
+  grid-area: search-icon;
+  justify-items: right;
+  
+}
+.first-row > .search-input{
+  display: grid;
+  grid-area: search-input;
+
+  justify-items: right;
+}
+
+/* header second row */
+
+.second-row{
+  display: grid;
+  grid-template-areas: 
+  "user-icon welcome-text button-new button-upload "
+  "......... ............ button-new button-upload ";
+  padding:20px;
+  gap:20px;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr  ;
+}
+
+.second-row > .fa-user{
+  display: grid;
+  grid-area: user-icon;
+  justify-content: right;
+  font-size: 4rem;
+}
+.second-row > .welcome-text{
+  display: grid;
+  /* gap:20px; */
+  justify-content: start;
+  grid-area: welcome-text;
+  
+}
+
+
+.second-row > .button-new{
+  display: grid;
+ justify-content: center;
+  grid-area: button-new;
+}
+.second-row > .button-upload{
+  display: grid;
+ justify-content: center;
+  grid-area: button-upload;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* layout background colors for testing */
+.header,
+.sidebar,
+.main-content {
+  background: #f1e9f7;
+  border: 3px solid #a579cc;
+  color: #a579cc;
+  /* padding: 2rem; */
+  /* font-size: 2rem; */
+  /* text-align: center; */
+}
