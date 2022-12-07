@@ -4,5 +4,5 @@ Grid practice assignment for The odin project
 https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
 
 
-Not mobile view friendly
+Mobile  friendly
 View live site at : https://doubtfullink53.github.io/admin-dashboard/

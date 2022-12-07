@@ -29,11 +29,10 @@
      .main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-    /* width: 50%; */
+    
     float: none;
 
-  /* grid-template-areas:
-   ""; */
+  
   grid-gap: 20px;
   margin: 10vw;
      }
