@@ -47,7 +47,13 @@
         background-color: black;
         margin: 6px 0;
      }
-      
+
+     /* search in hamburger */
+      .search-input-mobile{
+        margin:10px;
+        padding-left:10px;
+        border-radius: 15px;
+      }
 
      /* navbar styles */
      .topnav {
